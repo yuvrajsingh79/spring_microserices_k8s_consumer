@@ -35,7 +35,7 @@ public class consumer {
 			System.out.println("Current IP address of consumer : " + ip.getHostAddress());
 			String str = ip.toString();
 			//			  json.put("msg", ip);
-			log.info("service url is :- "+ environment.getProperty("SVC_URL"));
+			log.info("service urls is :- "+ environment.getProperty("SVC_URL"));
 			return ResponseEntity.ok().body(str);
 
 		} catch (UnknownHostException e) {
